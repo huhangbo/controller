@@ -59,7 +59,7 @@ export default function App() {
             <div>
               温度
             </div>
-            <Statistic value={degree} value={co2} valueStyle={{color: degree > 10 ? normalColor: abnormalColor}} suffix="°C" />
+            <Statistic value={degree} valueStyle={{color: degree > 10 ? normalColor: abnormalColor}} suffix="°C" />
           </Col>
 
         </Row>
@@ -69,14 +69,14 @@ export default function App() {
             <div>
               一氧化碳浓度
             </div>
-            <Statistic  value={co1} value={co2} valueStyle={{color:co1 > 10 ? normalColor: abnormalColor}} suffix="ppm" />
+            <Statistic  value={co1} valueStyle={{color:co1 > 10 ? normalColor: abnormalColor}} suffix="ppm" />
           </Col>
 
           <Col span={5}>
             <div>
               甲烷浓度
             </div>
-            <Statistic  value={ch4} value={co2} valueStyle={{color: ch4 > 10 ? normalColor: abnormalColor}} suffix="ppm" />
+            <Statistic  value={ch4}  valueStyle={{color: ch4 > 10 ? normalColor: abnormalColor}} suffix="ppm" />
           </Col>
 
           <Col span={5}>
